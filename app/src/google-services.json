@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "912445279264",
+    "project_id": "intermitted-fasting",
+    "storage_bucket": "intermitted-fasting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912445279264:android:2c9b295418c8fa0ceb8045",
+        "android_client_info": {
+          "package_name": "com.miaki.fasting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912445279264-c50vubtsij4rmp265a2khlqi9akoja76.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.miaki.fasting",
+            "certificate_hash": "fc21ca4e1f062ed7cfab7c3ea8ed7615563643d9"
+          }
+        },
+        {
+          "client_id": "912445279264-abniakgfs5u9sd6g339685c5gtuakeg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvwkBeND42BcX2sNOPwWW5jjMSWKfGFmw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912445279264-abniakgfs5u9sd6g339685c5gtuakeg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
