@@ -23,14 +23,16 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavController
 import com.miaki.fasting.R
 import com.miaki.fasting.components.AppButton
+import com.miaki.fasting.navigation.Screen
 import com.miaki.fasting.ui.theme.Typography
 import com.miaki.fasting.ui.theme.white
 import com.miaki.fasting.viewmodels.AuthViewModel
 
 @Composable
-fun LoginScreen() {
+fun LoginScreen(navController: NavController) {
     val authViewModel: AuthViewModel = hiltViewModel()
     val context = LocalContext.current
 
@@ -72,7 +74,8 @@ fun LoginScreen() {
                         )
                     }
                 }) {
-                    authViewModel.handleGoogleSignIn(context)
+                    navController.navigate(Screen.dashboard.route)
+//                    authViewModel.handleGoogleSignIn(context)
                 }
                 Spacer(modifier = Modifier.weight(1f))
                 Text(

@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import com.miaki.fasting.navigation.AppNavigation
 import com.miaki.fasting.screens.dashboard.DashboardScreen
 import com.miaki.fasting.ui.theme.IntermittentFastingTheme
 import dagger.hilt.android.AndroidEntryPoint
@@ -15,8 +16,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             IntermittentFastingTheme(darkTheme = false) {
-//                LoginScreen()
-                DashboardScreen()
+                AppNavigation()
             }
         }
     }
