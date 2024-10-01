@@ -74,6 +74,7 @@ fun LoginScreen(navController: NavController) {
                         )
                     }
                 }) {
+                    navController.nav
                     navController.navigate(Screen.dashboard.route)
 //                    authViewModel.handleGoogleSignIn(context)
                 }
