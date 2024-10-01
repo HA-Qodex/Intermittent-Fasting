@@ -15,13 +15,14 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavController
 import com.miaki.fasting.components.DashboardAppBar
 import com.miaki.fasting.ui.theme.background
 import com.miaki.fasting.ui.theme.white
 import com.miaki.fasting.viewmodels.DashboardViewModel
 
 @Composable
-fun DashboardScreen() {
+fun DashboardScreen(navController: NavController) {
     val context = LocalContext.current
     val viewModel: DashboardViewModel = hiltViewModel()
     val calender = viewModel.calenderDate.collectAsState()
