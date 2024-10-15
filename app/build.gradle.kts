@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.google.devtool)
     alias(libs.plugins.google.hilt)
     alias(libs.plugins.google.gms.google.services)
+    alias(libs.plugins.jetbrains.kotlin.serialization)
 }
 
 android {
@@ -92,5 +93,8 @@ dependencies {
     //Android Credential
     implementation(libs.play.services.auth)
     implementation(libs.androidx.credentials)
+
+    implementation(libs.kotlinx.serialization.json)
+
 
 }
